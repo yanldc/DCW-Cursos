@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+node_modules/
+
+autos
+autos.arquivo
+*.db
