@@ -1,5 +1,96 @@
 @import url(./reset.css);
 
-body {
-    background: linear-gradient(45deg,blue,pink);
+:root {
+    --color: #fff;
+    --bgBlack: #000;
+    --bgWhite: #fff;
 }
+
+body {
+    background: var(--bgBlack);
+    font-family: monospace;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    min-height: 99vh;
+    background: linear-gradient(110deg, #ffe600 , #ffae00, #000000, #ffae00);
+    animation: mygradient 12s ease-out infinite alternate;
+    background-size: 400% 100%;
+}
+
+@keyframes mygradient {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 50%;
+    }
+
+    100% {        
+        background-position: 100%;
+    }
+}
+
+.box-form {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    width: 90%;
+    height: 90vh;
+    background: var(--bgWhite);
+    border-radius: 20px;
+}
+
+.box-form h1 {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.box-button button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffae00;
+    color: var(--color);
+    border: none;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.box-button button:hover {
+    background-color: #000;
+}
+
+.container-form {
+    position: relative;
+    width: 40%;
+    height: 50vh;
+    text-align: center;
+    top: 150px;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 90vh;
+    border-radius: 0 20px 20px 0;
+    background: var(--bgBlack);
+}
+
