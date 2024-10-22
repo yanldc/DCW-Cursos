@@ -94,3 +94,6 @@ body {
     background: var(--bgBlack);
 }
 
+.container-img img {
+    height: 70vh;
+}
