@@ -1,0 +1,5 @@
+@import url(./reset.css);
+
+body {
+    background: linear-gradient(45deg,blue,pink);
+}
