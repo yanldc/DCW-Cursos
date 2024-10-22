@@ -92,8 +92,12 @@ body {
     height: 90vh;
     border-radius: 0 20px 20px 0;
     background: var(--bgBlack);
+<<<<<<< Updated upstream
 }
 
 .container-img img {
     height: 70vh;
 }
+=======
+}
+>>>>>>> Stashed changes
