@@ -33,39 +33,47 @@ function RegisterPage() {
   };
 
   return (
-    <div>
-      <h2>Registrar</h2>
-      {error && <p>{error}</p>}
-      <form onSubmit={handleRegister}>
-        <input
-          type="text"
-          placeholder="Nome"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          autoComplete="name"
-        />
-        <input
-          type="date"
-          value={birth}
-          onChange={(e) => setBirth(e.target.value)}
-          autoComplete="bday"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          autoComplete="email"
-        />
-        <input
-          type="password"
-          placeholder="Senha"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          autoComplete="new-password"
-        />
-        <button type="submit">Registrar</button>
-      </form>
+    <div className="main">
+      <div className="container">
+        <div className="content-form">
+          <h2>Junte-se a nós</h2>
+          <div className="form">
+            {error && <p>{error}</p>}
+            <form onSubmit={handleRegister}>
+              <input
+                type="text"
+                placeholder="Nome"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                autoComplete="name"
+              />
+              <input
+                type="date"
+                value={birth}
+                onChange={(e) => setBirth(e.target.value)}
+                autoComplete="bday"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                autoComplete="email"
+              />
+              <input
+                type="password"
+                placeholder="Senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                autoComplete="new-password"
+              />
+              <div className="box-button">
+                <button type="submit">Registrar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
