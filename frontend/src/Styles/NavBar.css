@@ -1,0 +1,46 @@
+/* NavBar.css */
+.header {
+    background-image: linear-gradient(43deg, #C850C0 0%, #4158D0 46%, #253275 100%);
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-list li:hover {
+    color: #af9e7a;
+}
+
+.logout-button {
+    background: none;
+    color: white;
+    font-weight: 500;
+    border: 1px solid white;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #fff;
+    color: black;
+}
