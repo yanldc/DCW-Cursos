@@ -11,9 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #af9e7a;
-    /* background: #af9e7a;
-    background: linear-gradient(90deg, #af9e7a 4%, #af9e7a 14%, #af9e7a 23%, #af9e7a 34%, #000000 76%, #000000 100%); */
+    background-image: linear-gradient(43deg, #C850C0 0%, #4158D0 46%, #253275 100%);
     animation: gradient 12s ease-out infinite alternate;
     background-size: 400% 100%;
 }
@@ -33,10 +31,9 @@
 }
 
 .container {
-    width: 60%;
+    width: 95%;
     background-color: #0000008e;
-    border-radius: 20px;
-    background: url("../assets/naruto-login.jpg") no-repeat right;
+    border-radius: 16px;
 }
 
 h2 {
@@ -51,10 +48,10 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 55%;
+    width: 60%;
     height: 90vh;
     background: #ffffff;
-    border-radius: 20px 0 0 20px;
+    border-radius: 16px 0 0 16px;
 }
 
 .form {
@@ -89,7 +86,7 @@ h2 {
     width: 16dvh;
     height: 6dvh;
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.719);
     color: #ddd;
     border-radius: 5px;
     border: none;
@@ -99,5 +96,12 @@ h2 {
 }
 
 .box-button button:hover {
-    background-color: #9c5e00;
+    background-color: #4158D0;
+}
+
+@media (max-width: 1000px) {
+    .content-form {
+        width: 100%;
+        border-radius: 16px;
+    }
 }
